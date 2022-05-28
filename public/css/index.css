@@ -18,8 +18,8 @@ Header
     width      : 100%;
     z-index    : 2;
     background : #454545;
-    height     : 100px;
     position   : fixed;
+    display    : flex;
 }
 
 .slider_section {
@@ -32,7 +32,8 @@ Header
 
 .header_body {
     display               : grid;
-    grid-template-columns : 1fr 2fr;
+    grid-template-columns : 1fr 1fr;
+    right                 : 50%;
 }
 
 .header_list {
@@ -54,16 +55,25 @@ Header
 }
 
 .header_social_networks {
-    display         : flex;
-    justify-content : center;
-    align-self      : center;
-    justify-self    : center;
+    display               : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-gap: 12px;
+    position              : absolute;
+    top                   : 50%;
+    transform             : translateY(-50%);
+    right                 : 2%;
+}
+
+footer .footer_soc_networks {
+    display  : flex;
+    position : relative;
+    right    : 0;
+
 }
 
 .header_social_networks a {
     align-self   : center;
     justify-self : center;
-    padding      : 5px;
     transition   : 2s;
 }
 
@@ -79,10 +89,11 @@ Header
     display         : flex;
     justify-content : space-around;
 }
+
 .footer {
-    display: flex;
-    justify-content: space-around;
-    width      : 100%;
-    background : #454545;
-    height     : 110px;
+    display         : flex;
+    justify-content : space-around;
+    width           : 100%;
+    background      : #454545;
+    height          : 110px;
 }
