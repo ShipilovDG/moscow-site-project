@@ -1,1 +1,131 @@
-@import url('/node_modules/@splidejs/splide/dist/css/splide.min.css');
+@import "import.sass";
+
+@font-face {
+    font-family : 'Whitney Medium';
+    src         : url('fonts/Whitney-Medium.eot');
+    src         : url('fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Whitney-Medium.woff') format('woff'),
+    url('fonts/Whitney-Medium.ttf') format('truetype');
+    font-weight : normal;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'Whitney Semibold';
+    src         : url('fonts/Whitney-Semibold.eot');
+    src         : url('fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Whitney-Semibold.woff') format('woff'),
+    url('fonts/Whitney-Semibold.ttf') format('truetype');
+    font-weight : normal;
+    font-style  : normal;
+}
+
+* {
+    padding     : 0;
+    margin      : 0;
+    box-sizing  : border-box;
+    font-family : 'Whitney Medium';
+}
+
+.container {
+    max-width : 1200px;
+    margin    : 0 auto;
+    z-index   : 1;
+}
+
+/**
+Header
+    */
+.header {
+    width      : 100%;
+    z-index    : 2;
+    background : #454545;
+    position   : fixed;
+    display    : flex;
+}
+
+.slider_section {
+    background-color : #454545;
+}
+.slider_speakers_image_div {
+    min-height: 700px;
+    background-color : #ECAB00;
+}
+slider_image {
+    float: right;
+}
+
+
+.slider_section .container {
+    padding-top : 120px;
+}
+.slider_speakers_image {
+
+}
+.header_body {
+    display               : grid;
+    grid-template-columns : 1fr 1fr;
+    right                 : 50%;
+}
+
+.header_list {
+    align-self      : center;
+    justify-self    : center;
+    display         : flex;
+    justify-content : space-between;
+}
+
+.header_list li {
+    list-style  : none;
+    margin-left : 60px;
+}
+
+.header_list li a {
+    text-decoration : none;
+    font-size       : 24px;
+    color           : white;
+}
+
+.header_social_networks {
+    display               : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-gap              : 12px;
+    position              : absolute;
+    top                   : 50%;
+    transform             : translateY(-50%);
+    right                 : 2%;
+}
+
+footer .footer_soc_networks {
+    display  : flex;
+    position : relative;
+    right    : 0;
+
+}
+
+.header_social_networks a {
+    align-self   : center;
+    justify-self : center;
+    transition   : 2s;
+}
+
+.header_social_networks a:hover {
+    background : radial-gradient(#000, #000, #454545, #454545, #454545);
+}
+
+.header_social_networks a img {
+    height : 20px;
+}
+
+.header_nav {
+    display         : flex;
+    justify-content : space-around;
+}
+
+.footer {
+    display         : flex;
+    justify-content : space-around;
+    width           : 100%;
+    background      : #454545;
+    height          : 110px;
+}
